@@ -37,6 +37,7 @@ void BFS(string initialCurrency,unordered_map<string,double>& amount, vector<vec
     q.push(initialCurrency);
   //匯兌基準為1.0個起始貨幣
     amount[initialCurrency]=1.0;
+  //執行BFS
     while(!q.empty()){
         string currC=q.front();
         q.pop();
