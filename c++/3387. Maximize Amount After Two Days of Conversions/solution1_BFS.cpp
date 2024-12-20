@@ -1,3 +1,10 @@
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <queue>
+#include <algorithm>
+#include <utility>
+
 double maxAmount(string initialCurrency, vector<vector<string>>& pairs1, vector<double>& rates1, vector<vector<string>>& pairs2, vector<double>& rates2) {
   //紀錄1元的initial可以換成多多的other currency，應該要盡可能換大最大數量的other currency，我們第二天才可以換回最大的initial currency
     unordered_map<string,double> amount1; 
