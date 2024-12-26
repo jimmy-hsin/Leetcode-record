@@ -31,7 +31,7 @@ public:
         return cnt;
     }
 
-//逆向倒回: 把排列好的想辦法回復成原始狀態
+//method1: 逆向倒回: 把排列好的想辦法回復成原始狀態
     int minSwap(vector<int>& arr){
         int n=arr.size();
       //先記住每個數字的數值，及其對應的原始位置
@@ -53,7 +53,7 @@ public:
         return count;
     }
 
-//正向排序: 把原始狀態想辦法擺成排列好的
+//method2: 正向排序: 把原始狀態想辦法擺成排列好的
     int minSwap2(vector<int>& arr){
         vector<int> sorted=arr;
         sort(sorted.begin(),sorted.end());
