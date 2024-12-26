@@ -2,7 +2,7 @@
 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     int m=nums1.size(), n=nums2.size();
-    //ensure nums1 is longer thaan nums2
+    //ensure nums1 is longer than nums2
     if(m<n)
         return findMedianSortedArrays(nums2,nums1);
   
