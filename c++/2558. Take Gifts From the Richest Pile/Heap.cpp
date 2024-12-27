@@ -4,7 +4,7 @@ public:
         priority_queue<int> pq;
         for(int i:gifts)
             pq.push(i);
-        for(int i=0;i<k;i++){
+        while(k--){
             int curr=pq.top();
             pq.pop();
             pq.push((int)sqrt(curr));
