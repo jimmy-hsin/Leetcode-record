@@ -11,7 +11,7 @@ public:
             det[i]+=det[i-1];
       
         vector<bool> res;
-        for(auto i:queries){
+        for(auto& i:queries){
           //看看queries指定的區間裡面有沒有error，若沒有的話val就為0，這個querie的結果為true
             int val=det[i[1]]-det[i[0]];
             res.push_back(val==0);
