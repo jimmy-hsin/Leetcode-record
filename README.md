@@ -1,9 +1,9 @@
 # LeetCode
 ## Daily Challenge
 
-| Date         | #  | Title | Difficulty | Algorithm | Solution | 
-| ------------- | ------------- | -------------| -------------| -------------|  -------------|
-| 2024- |  |  [](https://leetcode.com/problems//description/) | Medium |  Algo | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/) |
+| **Date**   | **#**| **Title** | **Difficulty** | **Algorithm** | **Solution** | 
+| ---------- | ---- | -------------| -------------| -------------|  -------------|
+| 2024-      |      |  [](https://leetcode.com/problems//description/) | Medium |  Algo | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/) |
 | 2024-12-27 | 1014 |  [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)                                                                             | Medium |  DP               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c%2B%2B/1014.%20Best%20Sightseeing%20Pair) |
 | 2024-12-26 | 494  |  [Target Sum](https://leetcode.com/problems/target-sum/description/)                                                                                                   | Hard   |  Backtracking, DP | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c%2B%2B/494.%20Target%20Sum) |
 | 2024-12-24 | 3203 |  [Find Minimum Diameter After Merging Two Trees](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description/)                             | Hard   |  DFS              | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c%2B%2B/3203.%20Find%20Minimum%20Diameter%20After%20Merging%20Two%20Trees) |
