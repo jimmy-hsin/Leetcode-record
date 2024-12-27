@@ -1,7 +1,7 @@
 # LeetCode
 ## Daily Challenge
 
-| **Date**   | **#**| **Title** | **Difficulty** | **Algorithm** | **Solution** | 
+| *Date*   | **#**| **Title** | **Difficulty** | **Algorithm** | **Solution** | 
 | ---------- | ---- | -------------| -------------| -------------|  -------------|
 | 2024-      |      |  [](https://leetcode.com/problems//description/) | Medium |  Algo | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/) |
 | 2024-12-27 | 1014 |  [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)                                                                             | Medium |  DP               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c%2B%2B/1014.%20Best%20Sightseeing%20Pair) |
