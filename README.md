@@ -26,6 +26,8 @@
 | 2024-12-05 |2337 | [Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/description/)                                                           | Medium |  Two Pointer      | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2337.%20Move%20Pieces%20to%20Obtain%20a%20String)                            |
 | 2024-12-04 |2825 | [Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/description/)                     | Medium |  Two Pointer      | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2825.%20Make%20String%20a%20Subsequence%20Using%20Cyclic%20Increments)       |
 | 2024-12-03 |2109 | [Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/description/)                                                                     | Medium |  Two Pointer      | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2109.%20Adding%20Spaces%20to%20a%20String)                                   |
+| 2024-12-02 |1455 |[Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/description/)| Medium |Two|[C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/1455.%20Check%20If%20a%20Word%20Occurs%20As%20a%20Prefix%20of%20Any%20Word%20in%20a%20Sentence)|
+
 
 ## Weekly Contest
 | **Contest#**   | **#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
