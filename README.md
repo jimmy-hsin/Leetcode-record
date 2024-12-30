@@ -25,7 +25,7 @@
 | **Contest#**   | **#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
 | ----------     | ---- | ------------ | -------------- | ------------- | ------------ |
 | 430(12/29)     |      |              |                |               |              |
-| #1             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |   [C++]([https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3402.%20Minimum%20Operations%20to%20Make%20Columns%20Strictly%20Increasing))           |
+| #1             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |   [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3402.%20Minimum%20Operations%20to%20Make%20Columns%20Strictly%20Increasing)           |
 | #2             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
 | #3             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
 | #4             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
