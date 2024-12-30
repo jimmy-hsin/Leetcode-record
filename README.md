@@ -21,6 +21,7 @@
 | 2024-12-11 |2779 | [Maximum Beauty of an Array After Applying Operation](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/)                 | Medium |  Sliding Window   | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2779.%20Maximum%20Beauty%20of%20an%20Array%20After%20Applying%20Operation)   |
 | 2024-12-10 |2981 | [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/)                 | Medium |  Sliding Window   | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2981.%20Find%20Longest%20Special%20Substring%20That%20Occurs%20Thrice%20I)   |
 | 2024-12-09 |3152 | [Special Array II](https://leetcode.com/problems/special-array-ii/description/)                                                                                       | Medium |  Prefix Sum       | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3152.%20Special%20Array%20II)                                                |
+| 2024-12-07 |1760 | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/special-array-ii/description/)                                                                        | Medium |  Binary Search    | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag)                         |
 
 ## Weekly Contest
 | **Contest#**   | **#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
