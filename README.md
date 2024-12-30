@@ -25,7 +25,7 @@
 | **Contest#**   | **#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
 | ----------     | ---- | ------------ | -------------- | ------------- | ------------ |
 | 430(12/29)     |      |              |                |               |              |
-| #1             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |   [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3402.%20Minimum%20Operations%20to%20Make%20Columns%20Strictly%20Increasing)           |
-| #2             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
-| #3             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
-| #4             |      |3402. Minimum Operations to Make Columns Strictly Increasing | Easy      |               |              |
+| #1             |      |3402. Minimum Operations to Make Columns Strictly Increasing   | Easy      |               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3402.%20Minimum%20Operations%20to%20Make%20Columns%20Strictly%20Increasing)           |
+| #2             |      |3403. Find the Lexicographically Largest String From the Box I | Medium    |               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3403.%20Find%20the%20Lexicographically%20Largest%20String%20From%20the%20Box%20I)     |
+| #3             |      |3404. Count Special Subsequences                               | Medium    |               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3404.%20Count%20Special%20Subsequences)                                               |
+| #4             |      |3402. Minimum Operations to Make Columns Strictly Increasing   | Easy      |               |              |
