@@ -2,7 +2,7 @@
 ## Daily Challenge
 
 | **Date**   |**#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
-| ---------- | ----| ------------ | -------------- | ------------- | ------------ |
+| ---------- |-----| ------------ | -------------- | ------------- | ------------ |
 | 2024-      |     | [](https://leetcode.com/problems//description/)                                                                                                                       | Medium |  Algo             | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/)                                                                            |
 | 2024-12-27 |1014 | [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/description/)                                                                             | Medium |  DP               | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/1014.%20Best%20Sightseeing%20Pair)                                           |
 | 2024-12-26 | 494 | [Target Sum](https://leetcode.com/problems/target-sum/description/)                                                                                                   | Hard   |  Backtracking, DP | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/494.%20Target%20Sum)                                                         |
