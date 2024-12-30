@@ -21,3 +21,7 @@
 | 2024-12-10 | 2981 |  [Find Longest Special Substring That Occurs Thrice I](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/description/)                 | Medium |  Sliding Window   | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/2981.%20Find%20Longest%20Special%20Substring%20That%20Occurs%20Thrice%20I)   |
 | 2024-12-09 | 3152 |  [Special Array II](https://leetcode.com/problems/special-array-ii/description/)                 | Medium |  Prefix Sum   | [C++](https://github.com/jimmy-hsin/Leetcode-record/tree/main/c++/3152.%20Special%20Array%20II)   |
 
+## Weekly Contest
+| **Contest#**   | **#**| **Title**    | **Difficulty** | **Algorithm** | **Solution** | 
+| ---------- | ---- | ------------ | -------------- | ------------- | ------------ |
+| 430 | ---- | ------------ | -------------- | ------------- | ------------ |
