@@ -12,9 +12,9 @@ public:
                     x++;
             }
 
-            if(i>=30)
+            if(i>30)
                 dp[i]=min({dp[i], dp[i-7]+costs[1], dp[i-30]+costs[2]});   
-            else if (i>=7)
+            else if (i>7)
                 dp[i]=min({dp[i], dp[i-7]+costs[1], costs[2]});
             else
                 dp[i]=min({dp[i], costs[1], costs[2]});      
