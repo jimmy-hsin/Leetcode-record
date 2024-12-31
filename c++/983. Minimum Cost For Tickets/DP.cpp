@@ -13,16 +13,16 @@ public:
                     x++;
             }
             //判斷跟前面一起買會不會比較便宜
-            if(i>=7)  //包含自己的前七天一起買  (如果這七天都沒有要搭車，因為都沒有買單日票造成總花費上升，那麼總花費理論上就會跟七天前一樣，在這步裡 dp[i]==dp[i-7] < dp[i-7]+costs[1]
+            if(i>7)  //包含自己的前七天一起買  (如果這七天都沒有要搭車，因為都沒有買單日票造成總花費上升，那麼總花費理論上就會跟七天前一樣，在這步裡 dp[i]==dp[i-7] < dp[i-7]+costs[1]
                 dp[i]=min(dp[i], dp[i-7]+costs[1]);  //前八天 + 七日票的價格
             else  //因為某些機掰狀況，7日票賣的比單日票便宜
-                dp[i]=min(dp[i],dp[0]+costs[1]);
+                dp[i]=min(dp[i], costs[1]);
           
             //同理
-            if(i>=30)
+            if(i>30)
                 dp[i]=min(dp[i],dp[i-30]+costs[2]);   
             else
-                dp[i]=min(dp[i],dp[0]+costs[2]);         
+                dp[i]=min(dp[i], costs[2]);         
         }
 
         return dp[n];
