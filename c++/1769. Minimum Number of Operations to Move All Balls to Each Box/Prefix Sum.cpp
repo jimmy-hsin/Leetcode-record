@@ -20,11 +20,11 @@ public:
         res[0]=prefix.back();
         for(int i=1;i<n-1;i++){ //去頭去尾，因為邊界操作比較特殊
             //front
-            int cnt1=cnt[i-1];  //在i前面有多少個'1'
-            res[i] += cnt1*i - prefix[i-1];  //把有'1'的地方到高度i 之間的空格補起來，所需的方塊數
+            int cntF=cnt[i-1];  //在i前面有多少個'1'
+            res[i] += cntF * i - prefix[i-1];  //把有'1'的地方到高度i 之間的空格補起來，所需的方塊數
             //behind
-            int cnt2=cnt.back()-cnt[i];  //在i後面有多少個'1'
-            res[i]+=prefix.back()-prefix[i]-cnt2*i;
+            int cntB=cnt.back()-cnt[i];  //在i後面有多少個'1'
+            res[i]+=prefix.back()-prefix[i]-cntB*i;
         }
         res[n-1]=cnt[n-2]*(n-1)-prefix[n-2]; //相當於上面for loop 的front, 把i=n-1帶入
 
