@@ -5,8 +5,8 @@ public:
         if(n==1)    return {0};
         vector<int> cnt(n,0);
         vector<int> prefix(n,0); //統計離原點的總操作長度
-        if(boxes[0]=='1')
-            cnt[0]=1;
+        
+        cnt[0]= (boxes[0]-'0');
         for(int i=1;i<n;i++){
             cnt[i]=cnt[i-1];
             prefix[i]=prefix[i-1];
@@ -15,7 +15,9 @@ public:
                 prefix[i] += i;
             }
         }
-        
+        /*  概念圖可以參考資料夾內的圖片，
+            範例為 s= 101101011, i=4的情況
+        */
         vector<int> res(n,0);
         res[0]=prefix.back();
         for(int i=1;i<n-1;i++){ //去頭去尾，因為邊界操作比較特殊
