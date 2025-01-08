@@ -13,9 +13,9 @@ public:
     bool isValid(string str1, string str2){
         int len1=str1.size(), len2=str2.size();
         if(len1 > len2) return false;
-        if(str2.substr(0,len1)!=str1)
+        if(str2.substr(0, len1) != str1)
             return false;
-        if(str2.substr(len2-len1, len1)!=str1)
+        if(str2.substr(len2-len1, len1) != str1)
             return false;
         return true;
     }
