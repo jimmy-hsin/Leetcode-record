@@ -22,6 +22,7 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int n2=(total+1==m)?nums2[0]:nums1[total+1];
         return  (double)(nums1[total]+n2)/2;
     }
+    
 //用x1，x2來存整個集合中的中間兩個數
     int x1=0, x2=0;
     for(int i=0;i<=total;i++){
