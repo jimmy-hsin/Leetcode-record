@@ -6,8 +6,8 @@ public:
             count[c-'a']++;
         int sum=0;
         for(int& i:count){
-            if(i==0)    continue;
-            sum+=(2-i%2);
+            if(i>0)   
+                sum+=(2-i%2);
         } 
         return sum;
     }
