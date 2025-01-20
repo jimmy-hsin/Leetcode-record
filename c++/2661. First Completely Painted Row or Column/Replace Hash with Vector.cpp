@@ -3,6 +3,7 @@ public:
     int firstCompleteIndex(vector<int>& arr, vector<vector<int>>& mat) {
         int m=mat.size(), n=mat[0].size();
         int k=arr.size();
+        //用Vector替代Hash Table 的開銷比較小
         //我們先創建兩個vector，以便我們後續快速查找arr[i]在mat中的位置
         vector<int> numToRow(k+1);
         vector<int> numToCol(k+1);
