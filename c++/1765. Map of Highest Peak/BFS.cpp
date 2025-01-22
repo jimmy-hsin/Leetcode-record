@@ -34,7 +34,7 @@ public:
                     }     
                 }
             }
-            level++;
+            level++; //每掃描完一層就會長高一點
         }
         return res;
         
