@@ -4,8 +4,7 @@ public:
         int m=grid.size(), n=grid[0].size();
         int computers=0;
         //我們設置兩個vector，用來統計每一行、每一列各有多少電腦，同時記錄現有電腦的總數
-        vector<int> row(m,0);
-        vector<int> col(n,0);
+        vector<int> row(m,0), col(n,0);
         for(int i=0;i<m;i++)
             for(int j=0;j<n;j++)
                 if(grid[i][j]==1){
