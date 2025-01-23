@@ -13,7 +13,7 @@ public:
     }
     void backtracking(vector<int>& nums,int diff, int currIdx, int& cnt){
         if(diff==0) cnt++;  //如果此解法可行，那就納入組合數當中
-        if(diff<0)  return;  //代表這個選法已經超出diff預計的數量了，後面的元素也無法在納入選擇中了，所以進行剪枝(pruning)
+        if(diff<0)  return;  //代表這個選法已經超出diff預計的數量了，後面的元素也無法再納入選擇中了，所以進行剪枝(pruning)
         for(int i=currIdx;i<nums.size();i++){  //否則，假設diff把元素i納入減法操作的集合中，再繼續往下做搭配   
             backtracking(nums,diff-nums[i],i+1,cnt); 
         }
