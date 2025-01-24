@@ -7,7 +7,7 @@ public:
             1.他自己已是終點，沒有任何向外路徑，或者
             2.他的所有向外路徑連接到的節點都是safe node, 那他也會是safe node
             
-          也就是所有自這節點出發的路徑都不可以有循環路徑，自循環也不可以
+          也就是所有自這節點出發的路徑都不可以有循環路徑，(自循環也不可以)
         */
         int n=graph.size();
         vector<vector<int>> inGraph(n);
@@ -28,14 +28,15 @@ public:
                 safe[i]=1;        //那他就是safe node
                 q.push(i);        //把它塞進q中，拿來當作BFS的起點
             }
-        
+        //在這邊自循環就會被去掉，永遠不會被掃瞄到
+
         //BFS
         while(!q.empty()){ 
             int node=q.front();  
             q.pop();
             for(int upNode:inGraph[node]){  //掃描q 中的safe node他所有的向內路徑連接到的上游節點(upNode)
                 if(--outDegree[upNode]==0){ //upNode去除node當出口後是否還有其他出口，因為我們只會把safe node 塞進q裡，所以這邊的node一定都是safe node
-                    safe[upNode]=1;         //如果沒有其他出口了，代表他的所有出口都是safe node，自然他也是safe node
+                    safe[upNode]=1;         //如果沒有其他出口了，代表他的所有出口都是safe node，他自然也是safe node
                     q.push(upNode);
                 }
             }   
