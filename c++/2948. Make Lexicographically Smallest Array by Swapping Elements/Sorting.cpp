@@ -25,9 +25,8 @@ public:
 
         sort(group.begin()+pre, group.end());
 
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++)
             nums[group[i]]=pos[i].first;
-        }
         return nums;
     }
 };
