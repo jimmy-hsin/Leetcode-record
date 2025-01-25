@@ -1,6 +1,11 @@
 class Solution {
 public:
     vector<int> lexicographicallySmallestArray(vector<int>& nums, int limit) {
+        /*  解題方法很簡單，先把所有的數做排序，然後進行分組，
+            分組的方式就是，如果兩排序後的兩個相鄰的數的差距大於limit，那他們倆個就會是分組的斷點位置
+            我們同時也紀錄了每個數字的原始位置，組別內的位置都可以隨意替換，
+            所以我們第二步要做的就是把組別內的index由前到後進行排列後，這樣就會是每個數字的最終位置
+        */
         int n=nums.size();
         vector<pair<int,int>> pos(n);//val, index;
         for(int i=0;i<n;i++)
