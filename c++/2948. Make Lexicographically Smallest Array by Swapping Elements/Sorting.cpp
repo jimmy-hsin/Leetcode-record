@@ -12,17 +12,17 @@ public:
         for(int i=0;i<n;i++)
             sorted[i]={nums[i],i};
         //然後對數字進行排序
-        ranges::sort(pos);
+        ranges::sort(sorted);
         
         vector<int> index;//紀錄每個數字最終該擺在哪裡
         int pre=0;  //每個組別的斷點
-        index.push_back(pos[0].second);
+        index.push_back(sorted[0].second);
         for(int i=1;i<n;i++){
             if(sorted[i].first-sorted[i-1].first > limit){    //遇到斷點了
                 sort(index.begin()+pre, index.end());//整理前一個組別的index(由前到後排序)
                 pre=i;    //重設斷點
             }
-            index.push_back(pos[i].second); 
+            index.push_back(sorted[i].second); 
         }
 
         sort(index.begin()+pre, index.end());//整理最後一組的index
