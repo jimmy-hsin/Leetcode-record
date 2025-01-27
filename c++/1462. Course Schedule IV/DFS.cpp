@@ -25,7 +25,7 @@ public:
     void dfs(vector<bitset<100>>& pre, int node, vector<int>& visited) {
         if (visited[node]) return; // 如果已訪問，直接返回
         visited[node] = 1;         // 標記為已訪問
-        for (int i = 0; i < pre.size(); ++i) {
+        for (int i = 0; i < pre.size(); ++i) { //pre.size()其實就是總課程數n，但我們不想傳那麼多參數，所以用這個替代
             if (pre[node][i]) {         // 如果 i 是 node 的直接先修課程
                 dfs(pre, i, visited);   // 那就往下搜尋
                                         // 在i也將它所有的先修課程搜尋完了之後
