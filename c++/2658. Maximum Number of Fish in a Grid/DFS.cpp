@@ -1,7 +1,7 @@
 class Solution {
 public:
     /*
-        基本上這題就是 695. Max Area of Island 的衍伸問題，只是695每個方塊的值為1，這題會有大於1的值，但解法都差不多
+        基本上這題就是 695. Max Area of Island 的變體，只是695每個方塊的值為1，這題會有大於1的值，但解法都差不多
     */
     int findMaxFish(vector<vector<int>>& grid) {
         int m=grid.size(), n=grid[0].size();
