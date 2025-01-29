@@ -4,8 +4,8 @@ private:
 public:
     DSU(int n){
         parent.resize(n);
-        rank.resize(n,1);   //每個節點最初的高度都是1
-        for(int i=0;i<n;i++)//初始化，每個節點都是自己的復節點
+        rank.resize(n,1);   //每個集合的最初的高度都是1
+        for(int i=0;i<n;i++)//初始化，每個節點都是自己的父節點
             parent[i]=i;
     }
     int find(int x){    //路徑壓縮
