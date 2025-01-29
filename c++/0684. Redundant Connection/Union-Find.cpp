@@ -37,7 +37,7 @@ public:
         DSU dsu(n+1);
         for(auto& e:edges){
             int u=e[0], v=e[1];
-            if(!dsu.unite(u,v))
+            if(!dsu.unite(u,v))//連結這兩點，並判斷他們是不是已經在同個集合裡
                 return e;
         }
         return {};
