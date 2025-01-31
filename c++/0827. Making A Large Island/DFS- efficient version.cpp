@@ -24,35 +24,28 @@ public:
         //因為只有四個方向，所以用一個全域變數做操作 會比一直新建區域變數來的快
         int ans = 0;
         vector<bool> visited(islandSize.size(), false);
-        int up, down, left, right, merge;
+        vector<int> extent(4,0);    //存取四個方向的島嶼ID
+        int merge, x, y; //merge用來存取連接後的島嶼面積，x, y 為延伸出去後的新座標
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] != 0) continue;
-            //取出四個方向的島嶼ID
-                up = (i > 0) ? grid[i-1][j] : 0;
-                down = (i < n-1) ? grid[i+1][j] : 0;
-                left = (j > 0) ? grid[i][j-1] : 0;
-                right = (j < n-1) ? grid[i][j+1] : 0;
-                visited[up] = true;
-                merge = 1 + islandSize[up];
-            //確認沒有重複計算
-                if (!visited[down]) {
-                    visited[down] = true;
-                    merge += islandSize[down];
+                merge=1;
+                //讀取四個方向的島嶼ID
+                for(int d=0;d<4;d++){
+                    x=i+dir[d], y=j+dir[d+1];
+                    extent[d]=0;    //如果出界的話島嶼ID為0(海水也為0，不過這是下面的判斷式操作的)
+                    if(x>=0 && x<n && y>=0 && y<n)  extent[d]=grid[x][y];
                 }
-                if (!visited[left]) {
-                    visited[left] = true;
-                    merge += islandSize[left];
-                }
-                if (!visited[right]) {
-                    visited[right] = true;
-                    merge += islandSize[right];
-                }
+                //排除重複計算的情況
+                for(int d=0;d<4;d++)
+                    if(!visited[extent[d]]){
+                        visited[extent[d]]=true;
+                        merge+=islandSize[extent[d]];
+                    }
+                //恢復visited的原始狀態
+                for(int d=0;d<4;d++)
+                    visited[extent[d]]=false;
                 ans = max(ans, merge);
-                visited[up] = false;
-                visited[down] = false;
-                visited[left] = false;
-                visited[right] = false;
             }
         }
         return ans;
