@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> dir = {-1, 0, 1, 0, -1};
     int largestIsland(vector<vector<int>>& grid) {
-        // 第一步，只填號
+        //第一步，探詢每個島嶼的大小
         int n=grid.size();
         vector<int> islandSize={0,0};    
         int zeroCnt=0;   
@@ -16,8 +16,7 @@ public:
                     zeroCnt++;
             }
         }
-        if(zeroCnt<=1)    //如果0的總個數<=1，代表轉化後就沒有0了
-            return n*n;
+        if(zeroCnt<=1)    return n*n;
         if(islandSize.size()<=3)    return islandSize.back() + 1;    
         
         // 嘗試連接
