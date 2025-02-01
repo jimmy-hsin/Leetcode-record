@@ -8,7 +8,7 @@ public:
         //相較於過去DFS尋找過後就把島嶼的數值轉成0，我們現在使用的DFS是把尋找過後的陸地區塊數值轉成對應的島嶼編號，由於0，1已經被使用了，所以我們的編號從2開始
         int n=grid.size();
         vector<int> islandSize={0,0};    //因為我們要從2開始編號，我們使用的是當前的size來當編號，所以先初始化，
-        int zeroCnt=0;    //計算0的個數，以排出一些特殊情況，加速運算
+        int zeroCnt=0;    //計算0的個數，以排除一些特殊情況，加速運算
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 if(grid[i][j]==1){    //陸地，且還沒被探詢過
@@ -19,7 +19,7 @@ public:
                     zeroCnt++;
             }
         }
-        if(zeroCnt<=1)    //如果0的總個數<=1，代表轉化後就沒有0了
+        if(zeroCnt<=1)    //如果0的總個數<=1，代表轉化後場上就沒有0了
             return n*n;
         if(islandSize.size()<=3)    return islandSize.back() + 1;    //如果最後的陣列大小小於3，代表要嘛只有一塊島嶼，要嘛都是海水，所以回傳最後的一塊的大小+1 (可能是海水islandSize[1], 也可能是陸地islandSize[2])
 
