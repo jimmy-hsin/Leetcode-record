@@ -1,7 +1,7 @@
 class Solution {
 public:
     /*
-        此題為695. Max Area of Island的延伸，相較於只找最到的島嶼面積，我們現在有一個機會可以把原本是水的格子轉化成陸地，試問，在只有一次轉化機會的狀況下，我們能得到的最大島嶼面積是多少?
+        此題為695. Max Area of Island的延伸，相較於只找最大的島嶼面積，我們現在有一個機會可以把原本是水的格子轉化成陸地，試問，在只有一次轉化機會的狀況下，我們能得到的最大島嶼面積是多少?
     */
     vector<int> dir={-1,0,1,0,-1};
     int largestIsland(vector<vector<int>>& grid) {
