@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> queryResults(int limit, vector<vector<int>>& queries) {
         int n=queries.size();
-	    unordered_map<int,int> balls;//balls,color
+	unordered_map<int,int> balls;//balls,color
         unordered_map<int,int> hash;// color, counts
         int color_nums=0;
         vector<int> res;
